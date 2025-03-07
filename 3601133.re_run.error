@@ -1,0 +1,171 @@
+
+-----------------------------------------------------------------------------
+
+tax-id    : 9940
+fasta     : european_mouflon.asm.hic.hap1.p_ctg.UniVec_adapters.masked.fa
+size      : 2867.84 MiB
+split-fa  : True
+####### Starting process ['zcat', '-f', '~/software/fcs-main/db/folder/all.blast_div.tsv.gz']
+####### Starting process ['grep', '-E', '^9940\t']
+####### Cleaning up process ['zcat', '-f', '~/software/fcs-main/db/folder/all.blast_div.tsv.gz']
+####### Cleaning up process ['grep', '-E', '^9940\t']
+BLAST-div : even-toed ungulates
+gx-div    : anml:mammals
+w/same-tax: True
+bin-dir   : ~/software/fcs-gx-0.5.4/build/src
+gx-db     : ~/software/fcs-main/db/folder/all.gxi
+gx-ver    : Mar  5 2025 19:20:16; git:v0.5.4-5-g5dfd516
+output    : hap1_gxout2/european_mouflon.asm.hic.hap1.p_ctg.UniVec_adapters.masked.9940.taxonomy.rpt
+
+-----------------------------------------------------------------------------
+
+####### args: Namespace(fasta='european_mouflon.asm.hic.hap1.p_ctg.UniVec_adapters.masked.fa', tax_id=9940, species=None, split_fasta=True, div='anml:mammals', gx_db='~/software/fcs-main/db/folder/all.gxi', mask_transposons=None, bin_dir='~/software/fcs-gx-0.5.4/build/src', allow_same_species=True, out_basename='hap1_gxout2/european_mouflon.asm.hic.hap1.p_ctg.UniVec_adapters.masked.9940', out_dir='hap1_gxout2', action_report=True, save_hits=False, generate_logfile=False, debug=True, phone_home_label=None, gc_acc=None, gc_genomes_root_dir=None, production_build_name=None, ignore_same_kingdom=None, out_taxonomy_rpt='hap1_gxout2/european_mouflon.asm.hic.hap1.p_ctg.UniVec_adapters.masked.9940.taxonomy.rpt') 
+
+####### 
+CPU count:  88
+####### 
+/proc/meminfo:
+MemTotal:       1056012612 kB
+MemFree:        496207128 kB
+MemAvailable:   624359336 kB
+Buffers:              16 kB
+Cached:         136542124 kB
+SwapCached:            0 kB
+Active:           690320 kB
+Inactive:       517699728 kB
+Active(anon):     101428 kB
+Inactive(anon): 381973832 kB
+Active(file):     588892 kB
+Inactive(file): 135725896 kB
+Unevictable:    33567672 kB
+Mlocked:        33567672 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:               844 kB
+Writeback:             0 kB
+AnonPages:      415391356 kB
+Mapped:          2341072 kB
+Shmem:            222836 kB
+KReclaimable:     843696 kB
+Slab:            2128596 kB
+SReclaimable:     843696 kB
+SUnreclaim:      1284900 kB
+KernelStack:       57616 kB
+PageTables:       834356 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    528006304 kB
+Committed_AS:   430005172 kB
+VmallocTotal:   13743895347199 kB
+VmallocUsed:     2672988 kB
+VmallocChunk:          0 kB
+Percpu:            92160 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:  401346560 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:     4624232 kB
+DirectMap2M:    707082240 kB
+DirectMap1G:    363855872 kB
+
+####### 
+top:
+top - 11:39:31 up 245 days, 13 min,  0 users,  load average: 5.33, 4.40, 4.28
+Tasks: 944 total,   2 running, 941 sleeping,   0 stopped,   1 zombie
+%Cpu(s): 10.7 us,  0.5 sy,  0.0 ni, 88.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem : 1031262.+total, 484576.3 free, 412519.8 used, 134166.2 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used. 609725.3 avail Mem 
+
+
+####### Starting process ['cat', 'european_mouflon.asm.hic.hap1.p_ctg.UniVec_adapters.masked.fa']
+####### Starting process ['~/software/fcs-gx-0.5.4/build/src/gx', 'get-fasta-stats']
+####### Starting process ['tee', '/dev/fd/6']
+####### Starting process ['~/software/fcs-gx-0.5.4/build/src/gx', 'split-fasta']
+####### Starting process ['cat', 'european_mouflon.asm.hic.hap1.p_ctg.UniVec_adapters.masked.fa']
+####### Starting process ['/usr/bin/time', '-v', 'nice', '-n19', '~/software/fcs-gx-0.5.4/build/src/gx', 'align', '--gx-db=~/software/fcs-main/db/folder/all.gxi', '--repeats-basis-fa=/dev/fd/5']
+####### Starting process ['~/software/fcs-gx-0.5.4/build/src/gx', 'taxify', '--gx-db=~/software/fcs-main/db/folder/all.gxi', '--output=hap1_gxout2/european_mouflon.asm.hic.hap1.p_ctg.UniVec_adapters.masked.9940.taxonomy.rpt.tmp', '--asserted-div=anml:mammals']
+Collecting masking statistics...
+Collected masking stats:  2.95798 Gbp; 53.4784s; 55.3116 Mbp/s. Baseline: 3.43222
+
+####### Cleaning up process ['cat', 'european_mouflon.asm.hic.hap1.p_ctg.UniVec_adapters.masked.fa']
+####### Cleaning up process ['tee', '/dev/fd/6']
+####### Cleaning up process ['~/software/fcs-gx-0.5.4/build/src/gx', 'split-fasta']
+Processed 1278 queries, 2960.67Mbp in 3638.95s. (0.813606Mbp/s); num-jobs:29574
+	Command being timed: "nice -n19 ~/software/fcs-gx-0.5.4/build/src/gx align --gx-db=~/software/fcs-main/db/folder/all.gxi --repeats-basis-fa=/dev/fd/5"
+	User time (seconds): 23331.13
+	System time (seconds): 2398.64
+	Percent of CPU this job got: 694%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:01:46
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 342707180
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 23
+	Minor (reclaiming a frame) page faults: 164766782
+	Voluntary context switches: 429771122
+	Involuntary context switches: 446061
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+####### Cleaning up process ['/usr/bin/time', '-v', 'nice', '-n19', '~/software/fcs-gx-0.5.4/build/src/gx', 'align', '--gx-db=~/software/fcs-main/db/folder/all.gxi', '--repeats-basis-fa=/dev/fd/5']
+####### Cleaning up process ['~/software/fcs-gx-0.5.4/build/src/gx', 'taxify', '--gx-db=~/software/fcs-main/db/folder/all.gxi', '--output=hap1_gxout2/european_mouflon.asm.hic.hap1.p_ctg.UniVec_adapters.masked.9940.taxonomy.rpt.tmp', '--asserted-div=anml:mammals']
+####### Cleaning up process ['~/software/fcs-gx-0.5.4/build/src/gx', 'get-fasta-stats']
+Exception ignored in: <_io.BufferedWriter name=6>
+Traceback (most recent call last):
+  File "~/software/fcs-gx-0.5.4/scripts/run_gx.py", line 312, in __exit__
+    self.wait()
+OSError: [Errno 9] Bad file descriptor
+####### Cleaning up process ['cat', 'european_mouflon.asm.hic.hap1.p_ctg.UniVec_adapters.masked.fa']
+Exception ignored in: <_io.BufferedReader name=5>
+Traceback (most recent call last):
+  File "~/software/fcs-gx-0.5.4/scripts/run_gx.py", line 312, in __exit__
+    self.wait()
+OSError: [Errno 9] Bad file descriptor
+####### ['~/software/Python-3.13.2/python', '~/software/fcs-gx-0.5.4/build/src/classify_taxonomy.py', '--in=hap1_gxout2/european_mouflon.asm.hic.hap1.p_ctg.UniVec_adapters.masked.9940.taxonomy.rpt.tmp', '--fasta-stats=hap1_gxout2/european_mouflon.asm.hic.hap1.p_ctg.UniVec_adapters.masked.9940.fasta-stats.json']
+Species                    : None
+Asserted div               : anml:mammals
+Inferred primary-divs      : ['anml:mammals', 'anml:primates', 'anml:rodents']
+Corrected primary-divs     : ['anml:mammals', 'anml:primates', 'anml:rodents']
+Putative contaminant divs  : []
+Aggregate coverage         : 89%
+Minimum contam. coverage   : 20%
+####### ['~/software/Python-3.13.2/python', '~/software/fcs-gx-0.5.4/build/src/action_report.py', '--in=hap1_gxout2/european_mouflon.asm.hic.hap1.p_ctg.UniVec_adapters.masked.9940.taxonomy.rpt']
+
+-----------------------------------------------------------------------------
+
+fcs_gx_report.txt contamination summary:
+----------------------------------------
+                                seqs      bases
+                               ----- ----------
+TOTAL                              0          0
+-----                          ----- ----------
+
+-----------------------------------------------------------------------------
+
+fcs_gx_report.txt action summary:
+---------------------------------
+                                seqs      bases
+                               ----- ----------
+TOTAL                              0          0
+-----                          ----- ----------
+
+-----------------------------------------------------------------------------
+
+Job 3601133 stderr output:
+
