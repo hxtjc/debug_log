@@ -1,0 +1,177 @@
+
+-----------------------------------------------------------------------------
+
+tax-id    : 4932
+fasta     : ~/software/fcs-gx-0.5.4/FCS_combo_test.fa
+size      : 12.18 MiB
+split-fa  : True
+####### Starting process ['zcat', '-f', '~/software/fcs-main/db/folder/all.blast_div.tsv.gz']
+####### Starting process ['grep', '-E', '^4932\t']
+####### Cleaning up process ['zcat', '-f', '~/software/fcs-main/db/folder/all.blast_div.tsv.gz']
+####### Cleaning up process ['grep', '-E', '^4932\t']
+BLAST-div : budding yeasts
+gx-div    : fung:budding yeasts
+w/same-tax: True
+bin-dir   : ~/software/fcs-gx-0.5.4/build/src
+gx-db     : ~/software/fcs-main/db/folder/all.gxi
+gx-ver    : Mar  5 2025 19:20:16; git:v0.5.4-5-g5dfd516
+output    : example/FCS_combo_test.4932.taxonomy.rpt
+
+-----------------------------------------------------------------------------
+
+####### args: Namespace(fasta='~/software/fcs-gx-0.5.4/FCS_combo_test.fa', tax_id=4932, species=None, split_fasta=True, div='fung:budding yeasts', gx_db='~/software/fcs-main/db/folder/all.gxi', mask_transposons=None, bin_dir='~/software/fcs-gx-0.5.4/build/src', allow_same_species=True, out_basename='example/FCS_combo_test.4932', out_dir='example', action_report=True, save_hits=False, generate_logfile=False, debug=True, phone_home_label=None, gc_acc=None, gc_genomes_root_dir=None, production_build_name=None, ignore_same_kingdom=None, out_taxonomy_rpt='example/FCS_combo_test.4932.taxonomy.rpt') 
+
+####### 
+CPU count:  88
+####### 
+/proc/meminfo:
+MemTotal:       1056012624 kB
+MemFree:        1004008996 kB
+MemAvailable:   1001893860 kB
+Buffers:              16 kB
+Cached:          6184824 kB
+SwapCached:            0 kB
+Active:          5158732 kB
+Inactive:        6945936 kB
+Active(anon):     102540 kB
+Inactive(anon):  6032612 kB
+Active(file):    5056192 kB
+Inactive(file):   913324 kB
+Unevictable:    33567672 kB
+Mlocked:        33567672 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:               868 kB
+Writeback:             0 kB
+AnonPages:      39462764 kB
+Mapped:          2019848 kB
+Shmem:            210816 kB
+KReclaimable:     662772 kB
+Slab:            1770468 kB
+SReclaimable:     662772 kB
+SUnreclaim:      1107696 kB
+KernelStack:       46368 kB
+PageTables:        99520 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    528006312 kB
+Committed_AS:   99425816 kB
+VmallocTotal:   13743895347199 kB
+VmallocUsed:     2333452 kB
+VmallocChunk:          0 kB
+Percpu:            86784 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:  37330944 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:     3739496 kB
+DirectMap2M:    495106048 kB
+DirectMap1G:    576716800 kB
+
+####### 
+top:
+top - 16:00:54 up 248 days,  4:34,  0 users,  load average: 2.95, 2.43, 2.47
+Tasks: 951 total,   4 running, 946 sleeping,   0 stopped,   1 zombie
+%Cpu(s):  2.2 us,  0.3 sy,  0.0 ni, 97.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem : 1031262.+total, 980475.4 free,  44099.4 used,   6687.4 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used. 978410.1 avail Mem 
+
+
+####### Starting process ['cat', '~/software/fcs-gx-0.5.4/FCS_combo_test.fa']
+####### Starting process ['~/software/fcs-gx-0.5.4/build/src/gx', 'get-fasta-stats']
+####### Starting process ['tee', '/dev/fd/6']
+####### Starting process ['~/software/fcs-gx-0.5.4/build/src/gx', 'split-fasta']
+####### Starting process ['cat', '~/software/fcs-gx-0.5.4/FCS_combo_test.fa']
+####### Starting process ['/usr/bin/time', '-v', 'nice', '-n19', '~/software/fcs-gx-0.5.4/build/src/gx', 'align', '--gx-db=~/software/fcs-main/db/folder/all.gxi', '--repeats-basis-fa=/dev/fd/5']
+####### Starting process ['~/software/fcs-gx-0.5.4/build/src/gx', 'taxify', '--gx-db=~/software/fcs-main/db/folder/all.gxi', '--output=example/FCS_combo_test.4932.taxonomy.rpt.tmp', '--asserted-div=fung:budding yeasts']
+Collecting masking statistics...
+Collected masking stats:  0.0125624 Gbp; 8.4421s; 1.48807 Mbp/s. Baseline: 1.04906
+
+####### Cleaning up process ['cat', '~/software/fcs-gx-0.5.4/FCS_combo_test.fa']
+####### Cleaning up process ['tee', '/dev/fd/6']
+####### Cleaning up process ['~/software/fcs-gx-0.5.4/build/src/gx', 'split-fasta']
+Processed 420 queries, 12.5732Mbp in 1581.56s. (0.00794985Mbp/s); num-jobs:120
+	Command being timed: "nice -n19 ~/software/fcs-gx-0.5.4/build/src/gx align --gx-db=~/software/fcs-main/db/folder/all.gxi --repeats-basis-fa=/dev/fd/5"
+	User time (seconds): 197.81
+	System time (seconds): 264.50
+	Percent of CPU this job got: 28%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 26:36.72
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 51656828
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 13167693
+	Voluntary context switches: 21510264
+	Involuntary context switches: 10657
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+####### Cleaning up process ['/usr/bin/time', '-v', 'nice', '-n19', '~/software/fcs-gx-0.5.4/build/src/gx', 'align', '--gx-db=~/software/fcs-main/db/folder/all.gxi', '--repeats-basis-fa=/dev/fd/5']
+####### Cleaning up process ['~/software/fcs-gx-0.5.4/build/src/gx', 'taxify', '--gx-db=~/software/fcs-main/db/folder/all.gxi', '--output=example/FCS_combo_test.4932.taxonomy.rpt.tmp', '--asserted-div=fung:budding yeasts']
+####### Cleaning up process ['~/software/fcs-gx-0.5.4/build/src/gx', 'get-fasta-stats']
+Exception ignored in: <_io.BufferedWriter name=6>
+Traceback (most recent call last):
+  File "~/software/fcs-gx-0.5.4/scripts/run_gx.py", line 312, in __exit__
+    self.wait()
+OSError: [Errno 9] Bad file descriptor
+####### Cleaning up process ['cat', '~/software/fcs-gx-0.5.4/FCS_combo_test.fa']
+Exception ignored in: <_io.BufferedReader name=5>
+Traceback (most recent call last):
+  File "~/software/fcs-gx-0.5.4/scripts/run_gx.py", line 312, in __exit__
+    self.wait()
+OSError: [Errno 9] Bad file descriptor
+####### ['~/software/Python-3.13.2/python', '~/software/fcs-gx-0.5.4/build/src/classify_taxonomy.py', '--in=example/FCS_combo_test.4932.taxonomy.rpt.tmp', '--fasta-stats=example/FCS_combo_test.4932.fasta-stats.json']
+Species                    : None
+Asserted div               : fung:budding yeasts
+Inferred primary-divs      : ['fung:budding yeasts', 'fung:ascomycetes']
+Corrected primary-divs     : ['fung:budding yeasts', 'fung:ascomycetes']
+Putative contaminant divs  : ['prok:g-proteobacteria', 'anml:primates']
+Aggregate coverage         : 100%
+Minimum contam. coverage   : 20%
+####### ['~/software/Python-3.13.2/python', '~/software/fcs-gx-0.5.4/build/src/action_report.py', '--in=example/FCS_combo_test.4932.taxonomy.rpt']
+
+-----------------------------------------------------------------------------
+
+fcs_gx_report.txt contamination summary:
+----------------------------------------
+                                seqs      bases
+                               ----- ----------
+TOTAL                            405     404216
+-----                          ----- ----------
+anml:primates                    202     201861
+prok:g-proteobacteria            202     201833
+anml:nematodes                     1        522
+
+-----------------------------------------------------------------------------
+
+fcs_gx_report.txt action summary:
+---------------------------------
+                                seqs      bases
+                               ----- ----------
+TOTAL                            405     404216
+-----                          ----- ----------
+EXCLUDE                          401     400522
+TRIM                               2       1871
+FIX                                2       1823
+
+-----------------------------------------------------------------------------
+
+Job 3636433 stderr output:
+
